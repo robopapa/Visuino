@@ -1,0 +1,494 @@
+{
+  "Config": {
+    "Build": {
+      "Board": "arduino:avr:uno"
+    }
+  },
+  "Version": "2",
+  "Product": "Visuino - Visual Arduino Programming",
+  "Content": "OpenWire Diagram",
+  "Units": [
+    {
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 1264,
+          "Name": "Arduino",
+          "Instance": {
+            "Serial": {
+              "*": [
+                {
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.UpDownCounter1.OutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoHardwareSerial"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "AnalogInputReference": "Default",
+            "Modules": {
+              "*": [
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoProcessor328Module"
+                },
+                {
+                  "+": "TArduinoWatchdogTimerModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "+": "TArduinoI2C"
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalInterruptChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMInterruptChannel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "OutputPin": {
+                    "SinkPins": [
+                      {
+                        "Name": "__OpenWireRootUnit__.RotaryEncoderSensor1.Clock(A)",
+                        "ID": "__OpenWireRootUnit__.RotaryEncoderSensor1.AInputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "OutputPin": {
+                    "SinkPins": [
+                      {
+                        "Name": "__OpenWireRootUnit__.RotaryEncoderSensor1.Direction(B)",
+                        "ID": "__OpenWireRootUnit__.RotaryEncoderSensor1.BInputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.ClockOutputPin"
+                    }
+                  },
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.LatchOutputPin"
+                    }
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.DataOutputPin"
+                    }
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "Arduino Uno"
+          },
+          "Type": "Component",
+          "Y": 256
+        },
+        {
+          "X": 256,
+          "Name": "RotaryEncoderSensor1",
+          "Instance": {
+            "Max": {
+              "Value": 11,
+              "RollOver": false
+            },
+            "Min": {
+              "Value": 0,
+              "RollOver": false
+            },
+            "+": "TArduinoRotaryEncoderSensor",
+            "UpOutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.UpDownCounter1.UpInputPin"
+                }
+              ]
+            },
+            "BInputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 7 ].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Digital._Item7.OutputPin"
+              }
+            },
+            "DownOutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.UpDownCounter1.DownInputPin"
+                }
+              ]
+            },
+            "AInputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 6 ].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Digital._Item6.OutputPin"
+              }
+            }
+          },
+          "Type": "Component",
+          "Y": 544
+        },
+        {
+          "X": 496,
+          "Name": "UpDownCounter1",
+          "Instance": {
+            "Max": {
+              "Value": 11,
+              "RollOver": false
+            },
+            "Min": {
+              "Value": 0,
+              "RollOver": false
+            },
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Serial[0].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.InputPin"
+                },
+                {
+                  "ID": "__OpenWireRootUnit__.LEDBarDisplay1.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoUpDownCounter",
+            "DownInputPin": {
+              "SourcePins": [
+                {
+                  "ID": "__OpenWireRootUnit__.RotaryEncoderSensor1.DownOutputPin"
+                }
+              ]
+            },
+            "UpInputPin": {
+              "SourcePins": [
+                {
+                  "ID": "__OpenWireRootUnit__.RotaryEncoderSensor1.UpOutputPin"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 544
+        },
+        {
+          "X": 992,
+          "Name": "ShiftRegister1",
+          "Instance": {
+            "ClockOutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 8 ].DigitalInputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Digital._Item8.DigitalInputPin"
+                }
+              ]
+            },
+            "DataOutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 10 ].DigitalInputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Digital._Item10.DigitalInputPin"
+                }
+              ]
+            },
+            "+": "TArduinoTexasInstrumentsShiftRegister74595",
+            "Channels": {
+              "*": [
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [1]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin1"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [2]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin2"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [3]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin3"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [4]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin4"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [5]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin5"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [6]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin6"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [7]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin7"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [8]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin8"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [9]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin9"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                },
+                {
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins.Pin [10]",
+                      "ID": "__OpenWireRootUnit__.LEDBarDisplay1.BarsOutputPins._Pin10"
+                    }
+                  },
+                  "+": "TArduinoTexasInstrumentsShiftRegister74595Channel"
+                }
+              ]
+            },
+            "LatchOutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 9 ].DigitalInputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Digital._Item9.DigitalInputPin"
+                }
+              ]
+            },
+            "NumbedChannels": 10
+          },
+          "Type": "Component",
+          "Y": 416
+        },
+        {
+          "X": 720,
+          "Name": "LEDBarDisplay1",
+          "Instance": {
+            "InputPin": {
+              "SourcePin": {
+                "ID": "__OpenWireRootUnit__.UpDownCounter1.OutputPin"
+              }
+            },
+            "BarsOutputPins": {
+              "Pins": [
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 0 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item0.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 1 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item1.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 2 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item2.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 3 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item3.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 4 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item4.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 5 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item5.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 6 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item6.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 7 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item7.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 8 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item8.InputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.ShiftRegister1.Channels.Channel[ 9 ].InputPin",
+                      "ID": "__OpenWireRootUnit__.ShiftRegister1.Channels._Item9.InputPin"
+                    }
+                  ]
+                }
+              ],
+              "Count": 11,
+              "Form": "__OpenWireRootUnit__"
+            },
+            "+": "TArduinoLEDBarDisplay"
+          },
+          "Type": "Component",
+          "Y": 592
+        }
+      ],
+      "Type": "Diagram",
+      "Selection": [
+        "RotaryEncoderSensor1"
+      ]
+    }
+  ]
+}
