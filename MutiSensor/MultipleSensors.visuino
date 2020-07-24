@@ -1,0 +1,778 @@
+{
+  "Config": {
+    "Build": {
+      "Board": "arduino:avr:uno"
+    }
+  },
+  "Version": "2",
+  "Product": "Visuino Pro - Visual Arduino Programming",
+  "Content": "OpenWire Diagram",
+  "Units": [
+    {
+      "Type": "Diagram",
+      "Name": "__OpenWireRootUnit__",
+      "*": [
+        {
+          "X": 1632,
+          "Name": "Arduino",
+          "Instance": {
+            "Serial": {
+              "*": [
+                {
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.TEMP6000Value.OutputPin"
+                      },
+                      {
+                        "ID": "__OpenWireRootUnit__.PhotoresistorValue.OutputPin"
+                      },
+                      {
+                        "ID": "__OpenWireRootUnit__.HumidityTextValues.OutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoHardwareSerial"
+                }
+              ]
+            },
+            "+": "TArduinoBoard",
+            "AnalogInputReference": "Default",
+            "Modules": {
+              "*": [
+                {
+                  "+": "TArduinoEEPROMModule"
+                },
+                {
+                  "+": "TArduinoProcessor328Module"
+                },
+                {
+                  "+": "TArduinoWatchdogTimerModule"
+                }
+              ]
+            },
+            "I2CChannels": {
+              "*": [
+                {
+                  "+": "TArduinoI2C"
+                }
+              ]
+            },
+            "Digital": {
+              "*": [
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSerial0Channel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Data3",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin6"
+                    }
+                  },
+                  "+": "TArduinoAdditionalDigitalInterruptChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Data2",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin5"
+                    }
+                  },
+                  "+": "TArduinoBasicDigitalPWMInterruptChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Data1",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin4"
+                    }
+                  },
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Data0",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin3"
+                    }
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.Enable",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin2"
+                    }
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins.RegisterSelect",
+                      "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.OutputPins._Pin0"
+                    }
+                  },
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "DigitalInputPin": {
+                    "SourcePin": {
+                      "ID": "__OpenWireRootUnit__.HumidityThermometer1.SensorOutputPin"
+                    }
+                  },
+                  "+": "TArduinoAdditionalDigitalChannel"
+                },
+                {
+                  "OutputPin": {
+                    "SinkPins": [
+                      {
+                        "Name": "__OpenWireRootUnit__.RotaryEncoderSensor1.Clock(A)",
+                        "ID": "__OpenWireRootUnit__.RotaryEncoderSensor1.AInputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "OutputPin": {
+                    "SinkPins": [
+                      {
+                        "Name": "__OpenWireRootUnit__.RotaryEncoderSensor1.Direction(B)",
+                        "ID": "__OpenWireRootUnit__.RotaryEncoderSensor1.BInputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoBasicDigitalPWMChannel"
+                },
+                {
+                  "+": "TArduinoBasicDigitalPWMSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "+": "TArduinoAdditionalDigitalSPI0Channel"
+                },
+                {
+                  "OutputPin": {
+                    "SinkPins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.ConvertToPercentPhoto.InputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "OutputPin": {
+                    "SinkPins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.ConvertToPercentTEMT6000.InputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalChannel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                },
+                {
+                  "+": "TArduinoCombinedAnalogDigitalI2C0Channel"
+                }
+              ]
+            },
+            "SPIChannels": {
+              "*": [
+                {
+                  "+": "TArduinoSPI"
+                }
+              ]
+            },
+            "BoardType": "Arduino Uno"
+          },
+          "Type": "Component",
+          "Y": 416
+        },
+        {
+          "X": 960,
+          "Name": "HumidityTextValues",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.DecisionMaking.OutputPins.Pin [0]",
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.OutputPins._Pin0"
+                }
+              ]
+            },
+            "Text": "%0 \/ %1",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Serial[0].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.InputPin"
+                },
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField2.InputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item1.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoFormattedText",
+            "Elements": {
+              "*": [
+                {
+                  "Name": "AnalogElement1",
+                  "InputPin": {
+                    "SourcePin": {
+                      "ID": "__OpenWireRootUnit__.HumidityThermometer1.TemperatureOutputPin"
+                    }
+                  },
+                  "+": "TArduinoFormattedTextElementAnalog"
+                },
+                {
+                  "Name": "AnalogElement2",
+                  "InputPin": {
+                    "SourcePin": {
+                      "Name": "__OpenWireRootUnit__.HumidityThermometer1.Humidity(%)",
+                      "ID": "__OpenWireRootUnit__.HumidityThermometer1.HumidityOutputPin"
+                    }
+                  },
+                  "+": "TArduinoFormattedTextElementAnalog"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 336
+        },
+        {
+          "X": 960,
+          "Name": "PhotoresistorValue",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.DecisionMaking.OutputPins.Pin [1]",
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.OutputPins._Pin1"
+                }
+              ]
+            },
+            "Text": "%0",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Serial[0].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.InputPin"
+                },
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField2.InputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item1.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoFormattedText",
+            "Elements": {
+              "*": [
+                {
+                  "Name": "AnalogElement1",
+                  "InputPin": {
+                    "SourcePin": {
+                      "ID": "__OpenWireRootUnit__.ConvertToPercentPhoto.OutputPin"
+                    }
+                  },
+                  "+": "TArduinoFormattedTextElementAnalog"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 576
+        },
+        {
+          "X": 624,
+          "Name": "HumidityThermometer1",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.DecisionMaking.OutputPins.Pin [0]",
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.OutputPins._Pin0"
+                }
+              ]
+            },
+            "SensorOutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 8 ].DigitalInputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Digital._Item8.DigitalInputPin"
+                }
+              ]
+            },
+            "InFahrenheit": true,
+            "+": "TArduinoDHTSensor",
+            "TemperatureOutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.HumidityTextValues.Elements.AnalogElement1.InputPin",
+                  "ID": "__OpenWireRootUnit__.HumidityTextValues.Elements._Item0.InputPin"
+                }
+              ]
+            },
+            "HumidityOutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.HumidityTextValues.Elements.AnalogElement2.InputPin",
+                  "ID": "__OpenWireRootUnit__.HumidityTextValues.Elements._Item1.InputPin"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 352
+        },
+        {
+          "X": 256,
+          "Name": "RotaryEncoderSensor1",
+          "Instance": {
+            "Max": {
+              "Value": 6,
+              "RollOver": false
+            },
+            "Min": {
+              "Value": 0,
+              "RollOver": false
+            },
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.SelectInputPin"
+                }
+              ]
+            },
+            "+": "TArduinoRotaryEncoderSensor",
+            "BInputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 10 ].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Digital._Item10.OutputPin"
+              }
+            },
+            "AInputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 9 ].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Digital._Item9.OutputPin"
+              }
+            }
+          },
+          "Type": "Component",
+          "Y": 608
+        },
+        {
+          "X": 496,
+          "Name": "DecisionMaking",
+          "Instance": {
+            "OutputPins": {
+              "Pins": [
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "ID": "__OpenWireRootUnit__.HumidityThermometer1.ClockInputPin"
+                    },
+                    {
+                      "ID": "__OpenWireRootUnit__.HumidityTextValues.ClockInputPin"
+                    },
+                    {
+                      "ID": "__OpenWireRootUnit__.HumidityThermometerTitle.ClockInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "ID": "__OpenWireRootUnit__.PhotoresistorValue.ClockInputPin"
+                    },
+                    {
+                      "ID": "__OpenWireRootUnit__.PhotoresistorTitle.ClockInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "ID": "__OpenWireRootUnit__.TEMP6000Value.ClockInputPin"
+                    },
+                    {
+                      "ID": "__OpenWireRootUnit__.TEMT6000Title.ClockInputPin"
+                    }
+                  ]
+                }
+              ],
+              "Count": 3,
+              "Form": "__OpenWireRootUnit__"
+            },
+            "InputPin": {
+              "SourcePins": [
+                {
+                  "ID": "__OpenWireRootUnit__.Clock.OutputPin"
+                }
+              ]
+            },
+            "+": "TArduinoClockDemux",
+            "SelectInputPin": {
+              "SourcePin": {
+                "ID": "__OpenWireRootUnit__.RotaryEncoderSensor1.OutputPin"
+              }
+            }
+          },
+          "Type": "Component",
+          "Y": 592
+        },
+        {
+          "X": 352,
+          "Name": "Clock",
+          "Instance": {
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.InputPin"
+                },
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField1.ClockInputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item0.ClockInputPin"
+                },
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField2.ClockInputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item1.ClockInputPin"
+                }
+              ]
+            },
+            "+": "TArduinoClockGenerator"
+          },
+          "Type": "Component",
+          "Y": 528
+        },
+        {
+          "X": 768,
+          "Name": "ConvertToPercentPhoto",
+          "Instance": {
+            "Value": 100,
+            "InputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 14 ]\/AnalogIn[ 0 ].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Digital._Item14.OutputPin"
+              }
+            },
+            "+": "TArduinoMultiplyByValue",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.PhotoresistorValue.Elements.AnalogElement1.InputPin",
+                  "ID": "__OpenWireRootUnit__.PhotoresistorValue.Elements._Item0.InputPin"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 608
+        },
+        {
+          "X": 976,
+          "Name": "TEMP6000Value",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.DecisionMaking.OutputPins.Pin [2]",
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.OutputPins._Pin2"
+                }
+              ]
+            },
+            "Text": "%0",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.Arduino.Serial[0].InputPin",
+                  "ID": "__OpenWireRootUnit__.Arduino.Serial._Item0.InputPin"
+                },
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField2.InputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item1.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoFormattedText",
+            "Elements": {
+              "*": [
+                {
+                  "Name": "AnalogElement1",
+                  "InputPin": {
+                    "SourcePin": {
+                      "ID": "__OpenWireRootUnit__.ConvertToPercentTEMT6000.OutputPin"
+                    }
+                  },
+                  "+": "TArduinoFormattedTextElementAnalog"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 800
+        },
+        {
+          "X": 752,
+          "Name": "ConvertToPercentTEMT6000",
+          "Instance": {
+            "Value": 100,
+            "InputPin": {
+              "SourcePin": {
+                "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 15 ]\/AnalogIn[ 1 ].OutputPin",
+                "ID": "__OpenWireRootUnit__.Arduino.Digital._Item15.OutputPin"
+              }
+            },
+            "+": "TArduinoMultiplyByValue",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.TEMP6000Value.Elements.AnalogElement1.InputPin",
+                  "ID": "__OpenWireRootUnit__.TEMP6000Value.Elements._Item0.InputPin"
+                }
+              ]
+            }
+          },
+          "Type": "Component",
+          "Y": 832
+        },
+        {
+          "X": 1312,
+          "Name": "LiquidCrystalDisplay1",
+          "Instance": {
+            "Elements": {
+              "*": [
+                {
+                  "ClockInputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.Clock.OutputPin"
+                      }
+                    ]
+                  },
+                  "Name": "TextField1",
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.HumidityThermometerTitle.OutputPin"
+                      },
+                      {
+                        "ID": "__OpenWireRootUnit__.PhotoresistorTitle.OutputPin"
+                      },
+                      {
+                        "ID": "__OpenWireRootUnit__.TEMT6000Title.OutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoLiquidCrystalElementTextField"
+                },
+                {
+                  "ClockInputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.Clock.OutputPin"
+                      }
+                    ]
+                  },
+                  "Row": 1,
+                  "InputPin": {
+                    "SourcePins": [
+                      {
+                        "ID": "__OpenWireRootUnit__.HumidityTextValues.OutputPin"
+                      },
+                      {
+                        "ID": "__OpenWireRootUnit__.TEMP6000Value.OutputPin"
+                      },
+                      {
+                        "ID": "__OpenWireRootUnit__.PhotoresistorValue.OutputPin"
+                      }
+                    ]
+                  },
+                  "+": "TArduinoLiquidCrystalElementTextField",
+                  "Name": "TextField2"
+                }
+              ]
+            },
+            "OutputPins": {
+              "Pins": [
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 7 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item7.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 6 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item6.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 5 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item5.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 4 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item4.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 3 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item3.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource",
+                  "SinkPins": [
+                    {
+                      "Name": "__OpenWireRootUnit__.Arduino.Digital.Digital[ 2 ].DigitalInputPin",
+                      "ID": "__OpenWireRootUnit__.Arduino.Digital._Item2.DigitalInputPin"
+                    }
+                  ]
+                },
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource"
+                },
+                {
+                  "Type": "ptSource"
+                }
+              ],
+              "Count": 11,
+              "Form": "__OpenWireRootUnit__"
+            },
+            "+": "TArduinoLiquidCrystalDisplay"
+          },
+          "Type": "Component",
+          "Y": 608
+        },
+        {
+          "X": 976,
+          "Name": "HumidityThermometerTitle",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.DecisionMaking.OutputPins.Pin [0]",
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.OutputPins._Pin0"
+                }
+              ]
+            },
+            "Value": "Humidity \/ Temp",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField1.InputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item0.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoTextValue"
+          },
+          "Type": "Component",
+          "Y": 256
+        },
+        {
+          "X": 960,
+          "Name": "PhotoresistorTitle",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.DecisionMaking.OutputPins.Pin [1]",
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.OutputPins._Pin1"
+                }
+              ]
+            },
+            "Value": "Photoresistor",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField1.InputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item0.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoTextValue"
+          },
+          "Type": "Component",
+          "Y": 512
+        },
+        {
+          "X": 992,
+          "Name": "TEMT6000Title",
+          "Instance": {
+            "ClockInputPin": {
+              "SourcePins": [
+                {
+                  "Name": "__OpenWireRootUnit__.DecisionMaking.OutputPins.Pin [2]",
+                  "ID": "__OpenWireRootUnit__.DecisionMaking.OutputPins._Pin2"
+                }
+              ]
+            },
+            "Value": "TEMT 6000",
+            "OutputPin": {
+              "SinkPins": [
+                {
+                  "Name": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements.TextField1.InputPin",
+                  "ID": "__OpenWireRootUnit__.LiquidCrystalDisplay1.Elements._Item0.InputPin"
+                }
+              ]
+            },
+            "+": "TArduinoTextValue"
+          },
+          "Type": "Component",
+          "Y": 736
+        }
+      ]
+    }
+  ]
+}
